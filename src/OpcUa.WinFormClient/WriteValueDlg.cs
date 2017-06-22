@@ -9,7 +9,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Opc.Ua;
 using Opc.Ua.Client;
-using Opc.Ua.Client.Controls;
 
 namespace TongFang.OpcUa.Client
 {
@@ -211,7 +210,7 @@ namespace TongFang.OpcUa.Client
             }
             catch (Exception exception)
             {
-                ClientUtils.HandleException("Error Writing Value", exception);
+                ExceptionHelper.HandleException("Error Writing Value", exception);
             }
         }
         #endregion

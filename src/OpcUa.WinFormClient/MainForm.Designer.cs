@@ -86,8 +86,7 @@
             this.Monitoring_Deadband_Percentage_1MI = new System.Windows.Forms.ToolStripMenuItem();
             this.Monitoring_Deadband_Percentage_5MI = new System.Windows.Forms.ToolStripMenuItem();
             this.Monitoring_Deadband_Percentage_10MI = new System.Windows.Forms.ToolStripMenuItem();
-            this.ConnectServerCTRL = new Opc.Ua.Client.Controls.ConnectServerCtrl();
-            this.clientHeaderBranding1 = new Opc.Ua.Server.Controls.ClientHeaderBranding();
+            this.ConnectServerCTRL = new ConnectServerCtrl();
             this.fILEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuBar.SuspendLayout();
@@ -577,18 +576,6 @@
             this.ConnectServerCTRL.ReconnectStarting += new System.EventHandler(this.Server_ReconnectStarting);
             this.ConnectServerCTRL.ReconnectComplete += new System.EventHandler(this.Server_ReconnectComplete);
             // 
-            // clientHeaderBranding1
-            // 
-            this.clientHeaderBranding1.BackColor = System.Drawing.Color.White;
-            this.clientHeaderBranding1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.clientHeaderBranding1.Location = new System.Drawing.Point(0, 24);
-            this.clientHeaderBranding1.MaximumSize = new System.Drawing.Size(0, 75);
-            this.clientHeaderBranding1.MinimumSize = new System.Drawing.Size(500, 75);
-            this.clientHeaderBranding1.Name = "clientHeaderBranding1";
-            this.clientHeaderBranding1.Padding = new System.Windows.Forms.Padding(3);
-            this.clientHeaderBranding1.Size = new System.Drawing.Size(884, 75);
-            this.clientHeaderBranding1.TabIndex = 5;
-            // 
             // fILEToolStripMenuItem
             // 
             this.fILEToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -612,7 +599,6 @@
             this.Controls.Add(this.MainPN);
             this.Controls.Add(this.StatusBar);
             this.Controls.Add(this.ConnectServerCTRL);
-            this.Controls.Add(this.clientHeaderBranding1);
             this.Controls.Add(this.MenuBar);
             this.MainMenuStrip = this.MenuBar;
             this.Name = "MainForm";
@@ -690,10 +676,9 @@
         private System.Windows.Forms.ToolStripMenuItem FileMI;
         private System.Windows.Forms.ToolStripMenuItem File_LoadMI;
         private System.Windows.Forms.ToolStripMenuItem File_SaveMI;
-        private Opc.Ua.Client.Controls.ConnectServerCtrl ConnectServerCTRL;
+        private ConnectServerCtrl ConnectServerCTRL;
         private System.Windows.Forms.ToolStripMenuItem Server_SetLocaleMI;
         private System.Windows.Forms.ToolStripMenuItem Server_SetUserMI;
-        private Opc.Ua.Server.Controls.ClientHeaderBranding clientHeaderBranding1;
         private System.Windows.Forms.ToolStripMenuItem fILEToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
     }

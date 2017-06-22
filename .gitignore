@@ -259,3 +259,6 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+/help/webhelp
+/help/webhelp/whxdata
+/help/webhelp/resource/resource.xml

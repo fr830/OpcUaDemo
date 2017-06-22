@@ -10,7 +10,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Opc.Ua;
 using Opc.Ua.Client;
-using Opc.Ua.Client.Controls;
 
 namespace TongFang.OpcUa.Client
 {
@@ -23,7 +22,6 @@ namespace TongFang.OpcUa.Client
         private MainForm()
         {
             InitializeComponent();
-            this.Icon = ClientUtils.GetAppIcon();
         }
 
         /// <summary>
@@ -33,7 +31,6 @@ namespace TongFang.OpcUa.Client
         public MainForm(ApplicationConfiguration configuration)
         {
             InitializeComponent();
-            this.Icon = ClientUtils.GetAppIcon();
 
             ConnectServerCTRL.Configuration = m_configuration = configuration;
             ConnectServerCTRL.ServerUrl = "opc.tcp://localhost:62547/Quickstarts/DataAccessServer";
@@ -67,7 +64,7 @@ namespace TongFang.OpcUa.Client
             }
             catch (Exception exception)
             {
-                ClientUtils.HandleException(this.Text, exception);
+                ExceptionHelper.HandleException(this.Text, exception);
             }
         }
 
@@ -82,7 +79,7 @@ namespace TongFang.OpcUa.Client
             }
             catch (Exception exception)
             {
-                ClientUtils.HandleException(this.Text, exception);
+                ExceptionHelper.HandleException(this.Text, exception);
             }
         }
 
@@ -97,7 +94,7 @@ namespace TongFang.OpcUa.Client
             }
             catch (Exception exception)
             {
-                ClientUtils.HandleException(this.Text, exception);
+                ExceptionHelper.HandleException(this.Text, exception);
             }
         }
 
@@ -133,7 +130,7 @@ namespace TongFang.OpcUa.Client
             }
             catch (Exception exception)
             {
-                ClientUtils.HandleException(this.Text, exception);
+                ExceptionHelper.HandleException(this.Text, exception);
             }
         }
 
@@ -150,7 +147,7 @@ namespace TongFang.OpcUa.Client
             }
             catch (Exception exception)
             {
-                ClientUtils.HandleException(this.Text, exception);
+                ExceptionHelper.HandleException(this.Text, exception);
             }
         }
 
@@ -174,7 +171,7 @@ namespace TongFang.OpcUa.Client
             }
             catch (Exception exception)
             {
-                ClientUtils.HandleException(this.Text, exception);
+                ExceptionHelper.HandleException(this.Text, exception);
             }
         }
 
@@ -243,7 +240,7 @@ namespace TongFang.OpcUa.Client
             }
             catch (Exception exception)
             {
-                ClientUtils.HandleException(this.Text, exception);
+                ExceptionHelper.HandleException(this.Text, exception);
             }
         }
 
@@ -412,7 +409,7 @@ namespace TongFang.OpcUa.Client
             }
             catch (Exception exception)
             {
-                ClientUtils.HandleException(this.Text, exception);
+                ExceptionHelper.HandleException(this.Text, exception);
             }
         }
 
@@ -487,7 +484,7 @@ namespace TongFang.OpcUa.Client
             }
             catch (Exception exception)
             {
-                ClientUtils.HandleException(this.Text, exception);
+                ExceptionHelper.HandleException(this.Text, exception);
             }
         }
 
@@ -511,7 +508,7 @@ namespace TongFang.OpcUa.Client
             }
             catch (Exception exception)
             {
-                ClientUtils.HandleException(this.Text, exception);
+                ExceptionHelper.HandleException(this.Text, exception);
             }
         }
 
@@ -526,7 +523,7 @@ namespace TongFang.OpcUa.Client
             }
             catch (Exception exception)
             {
-                ClientUtils.HandleException(this.Text, exception);
+                ExceptionHelper.HandleException(this.Text, exception);
             }
         }
 
@@ -575,7 +572,7 @@ namespace TongFang.OpcUa.Client
             }
             catch (Exception exception)
             {
-                ClientUtils.HandleException(this.Text, exception);
+                ExceptionHelper.HandleException(this.Text, exception);
             }
         }
 
@@ -664,7 +661,7 @@ namespace TongFang.OpcUa.Client
             }
             catch (Exception exception)
             {
-                ClientUtils.HandleException(this.Text, exception);
+                ExceptionHelper.HandleException(this.Text, exception);
             }
         }
 
@@ -695,7 +692,7 @@ namespace TongFang.OpcUa.Client
             }
             catch (Exception exception)
             {
-                ClientUtils.HandleException(this.Text, exception);
+                ExceptionHelper.HandleException(this.Text, exception);
             }
         }
 
@@ -732,7 +729,7 @@ namespace TongFang.OpcUa.Client
             }
             catch (Exception exception)
             {
-                ClientUtils.HandleException(this.Text, exception);
+                ExceptionHelper.HandleException(this.Text, exception);
             }
         }
 
@@ -798,7 +795,7 @@ namespace TongFang.OpcUa.Client
             }
             catch (Exception exception)
             {
-                ClientUtils.HandleException(this.Text, exception);
+                ExceptionHelper.HandleException(this.Text, exception);
             }
         }
 
@@ -868,7 +865,7 @@ namespace TongFang.OpcUa.Client
             }
             catch (Exception exception)
             {
-                ClientUtils.HandleException(this.Text, exception);
+                ExceptionHelper.HandleException(this.Text, exception);
             }
         }
 
@@ -962,7 +959,7 @@ namespace TongFang.OpcUa.Client
             }
             catch (Exception exception)
             {
-                ClientUtils.HandleException(this.Text, exception);
+                ExceptionHelper.HandleException(this.Text, exception);
             }
         }
 
@@ -1030,7 +1027,7 @@ namespace TongFang.OpcUa.Client
             }
             catch (Exception exception)
             {
-                ClientUtils.HandleException(this.Text, exception);
+                ExceptionHelper.HandleException(this.Text, exception);
             }
         }
 
@@ -1078,7 +1075,7 @@ namespace TongFang.OpcUa.Client
             }
             catch (Exception exception)
             {
-                ClientUtils.HandleException(this.Text, exception);
+                ExceptionHelper.HandleException(this.Text, exception);
             }
         }
 
@@ -1092,7 +1089,7 @@ namespace TongFang.OpcUa.Client
             }
             catch (Exception exception)
             {
-                ClientUtils.HandleException(this.Text, exception);
+                ExceptionHelper.HandleException(this.Text, exception);
             }
         }
 
@@ -1106,7 +1103,7 @@ namespace TongFang.OpcUa.Client
             }
             catch (Exception exception)
             {
-                ClientUtils.HandleException(this.Text, exception);
+                ExceptionHelper.HandleException(this.Text, exception);
             }
         }
 
@@ -1135,7 +1132,7 @@ namespace TongFang.OpcUa.Client
             }
             catch (Exception exception)
             {
-                ClientUtils.HandleException(this.Text, exception);
+                ExceptionHelper.HandleException(this.Text, exception);
             }
         }
 
@@ -1146,7 +1143,7 @@ namespace TongFang.OpcUa.Client
             }
             catch (Exception exception)
             {
-                ClientUtils.HandleException(this.Text, exception);
+                ExceptionHelper.HandleException(this.Text, exception);
             }
         }
         #endregion

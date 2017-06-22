@@ -35,9 +35,6 @@
     <Reference Include="Opc.Ua.Client">
       <HintPath>..\..\lib\Opc.Ua.Client.dll</HintPath>
     </Reference>
-    <Reference Include="Opc.Ua.ClientControls">
-      <HintPath>..\..\lib\Opc.Ua.ClientControls.dll</HintPath>
-    </Reference>
     <Reference Include="Opc.Ua.Configuration">
       <HintPath>..\..\lib\Opc.Ua.Configuration.dll</HintPath>
     </Reference>
@@ -57,7 +54,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConnectServerCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConnectServerCtrl.Designer.cs">
+      <DependentUpon>ConnectServerCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DiscoverServerDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiscoverServerDlg.Designer.cs">
+      <DependentUpon>DiscoverServerDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExceptionDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExceptionDlg.Designer.cs">
+      <DependentUpon>ExceptionDlg.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormUtils.cs" />
+    <Compile Include="Helpers\ClientHelper.cs" />
+    <Compile Include="Helpers\ExceptionHelper.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,12 +89,21 @@
     <Compile Include="ReadHistoryDlg.Designer.cs">
       <DependentUpon>ReadHistoryDlg.cs</DependentUpon>
     </Compile>
+    <Compile Include="SelectLocaleDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectLocaleDlg.Designer.cs">
+      <DependentUpon>SelectLocaleDlg.cs</DependentUpon>
+    </Compile>
     <Compile Include="WriteValueDlg.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="WriteValueDlg.Designer.cs">
       <DependentUpon>WriteValueDlg.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

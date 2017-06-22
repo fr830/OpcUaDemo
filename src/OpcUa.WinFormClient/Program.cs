@@ -41,7 +41,7 @@ namespace TongFang.OpcUa.Client
             }
             catch (Exception e)
             {
-                ExceptionDlg.Show(application.ApplicationName, e);
+                ExceptionHelper.ShowExceptionDlg(application.ApplicationName, e);
                 return;
             }
         }
