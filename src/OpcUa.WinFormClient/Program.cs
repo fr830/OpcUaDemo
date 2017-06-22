@@ -24,12 +24,6 @@ namespace TongFang.OpcUa.Client
 
             try
             {
-                // process and command line arguments.
-                if (application.ProcessCommandLine())
-                {
-                    return;
-                }
-
                 // load the application configuration.
                 application.LoadApplicationConfiguration(false);
 

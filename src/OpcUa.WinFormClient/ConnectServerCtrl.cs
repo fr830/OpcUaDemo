@@ -271,7 +271,7 @@ namespace TongFang.OpcUa.Client
                 (String.IsNullOrEmpty(SessionName)) ? m_configuration.ApplicationName : SessionName,
                 60000,
                 UserIdentity,
-                PreferredLocales);
+                PreferredLocales).Result;
 
             // set up keep alive callback.
             m_session.KeepAlive += new KeepAliveEventHandler(Session_KeepAlive);
