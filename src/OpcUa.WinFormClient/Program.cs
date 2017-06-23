@@ -55,24 +55,24 @@ namespace TongFang.OpcUa.Client
                 {
                     ApplicationCertificate = new CertificateIdentifier
                     {
-                        StoreType = "X509Store",
-                        StorePath = "CurrentUser\\UA_MachineDefault",
-                        SubjectName = "UA Core Sample Client"
+                        StoreType = "Directory",
+                        StorePath = "%CommonApplicationData%\\OPC Foundation\\CertificateStores\\MachineDefault",
+                        SubjectName = "Quickstart DataAccess Client"
                     },
                     TrustedPeerCertificates = new CertificateTrustList
                     {
                         StoreType = "Directory",
-                        StorePath = "OPC Foundation/CertificateStores/UA Applications",
+                        StorePath = "%CommonApplicationData%\\OPC Foundation\\CertificateStores\\UA Applications",
                     },
                     TrustedIssuerCertificates = new CertificateTrustList
                     {
                         StoreType = "Directory",
-                        StorePath = "OPC Foundation/CertificateStores/UA Certificate Authorities",
+                        StorePath = "%CommonApplicationData%\\OPC Foundation\\CertificateStores\\UA Certificate Authorities",
                     },
                     RejectedCertificateStore = new CertificateTrustList
                     {
                         StoreType = "Directory",
-                        StorePath = "OPC Foundation/CertificateStores/RejectedCertificates",
+                        StorePath = "%CommonApplicationData%\\OPC Foundation\\CertificateStores\\RejectedCertificates",
                     },
                     NonceLength = 32,
                     AutoAcceptUntrustedCertificates = true
