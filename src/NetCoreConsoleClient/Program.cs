@@ -142,10 +142,10 @@ namespace NetCoreConsoleClient
                 out continuationPoint,
                 out references);
 
-            Console.WriteLine(" DisplayName, BrowseName, NodeClass");
+            Console.WriteLine(" DisplayName, BrowseName, NodeClass, NodeId");
             foreach (var rd in references)
             {
-                Console.WriteLine(" {0}, {1}, {2}", rd.DisplayName, rd.BrowseName, rd.NodeClass);
+                Console.WriteLine(" {0}, {1}, {2},  {3}", rd.DisplayName, rd.BrowseName, rd.NodeClass, rd.NodeId);
                 ReferenceDescriptionCollection nextRefs;
                 byte[] nextCp;
                 session.Browse(
@@ -162,7 +162,7 @@ namespace NetCoreConsoleClient
 
                 foreach (var nextRd in nextRefs)
                 {
-                    Console.WriteLine("   + {0}, {1}, {2}", nextRd.DisplayName, nextRd.BrowseName, nextRd.NodeClass);
+                    Console.WriteLine("   + {0}, {1}, {2}, {3}", nextRd.DisplayName, nextRd.BrowseName, nextRd.NodeClass, nextRd.NodeId);
                 }
             }
 
@@ -174,6 +174,18 @@ namespace NetCoreConsoleClient
                 new MonitoredItem(subscription.DefaultItem)
                 {
                     DisplayName = "ServerStatusCurrentTime", StartNodeId = "i=2258"
+                },
+                new MonitoredItem(subscription.DefaultItem)
+                {
+                    DisplayName = "ControlOut", StartNodeId = "ns=4;i=1285"
+                },
+                new MonitoredItem(subscription.DefaultItem)
+                {
+                    DisplayName = "Test1", StartNodeId = "ns=4;i=1286"
+                },
+                new MonitoredItem(subscription.DefaultItem)
+                {
+                    DisplayName = "Test2", StartNodeId = "ns=4;i=1259"
                 }
             };
             list.ForEach(i => i.Notification += OnNotification);
