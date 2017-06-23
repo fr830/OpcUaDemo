@@ -2,7 +2,9 @@
 using Opc.Ua.Configuration;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -32,65 +34,84 @@ namespace TongFang.OpcUa.Client
 
         public static ApplicationConfiguration GetApplicationConfiguration()
         {
-            ApplicationConfiguration config = new ApplicationConfiguration
+            var config = new ApplicationConfiguration()
             {
-                ApplicationName = "Data Access Client",
+                ApplicationName = "UA Core Winform Client",
                 ApplicationType = ApplicationType.Client,
-                ApplicationUri = "urn:localhost:UASDK:DataAccessClient",
-                CertificateValidator = new CertificateValidator
-                {
-                },
-                ClientConfiguration = new ClientConfiguration
-                {
-                     DefaultSessionTimeout = 60000,
-                     DiscoveryServers = new EndpointDescriptionCollection
-                     {
-                          new EndpointDescription("opc.tcp://127.0.0.1:4840"),
-                          new EndpointDescription("http://127.0.0.1:52601/UADiscovery"),
-                          new EndpointDescription("http://127.0.0.1/UADiscovery/Default.svc"),
-                     },
-                     MinSubscriptionLifetime = 10000,
-                },
+                ApplicationUri = "urn:" + Utils.GetHostName() + ":OPCFoundation:CoreWinformClient",
                 SecurityConfiguration = new SecurityConfiguration
                 {
                     ApplicationCertificate = new CertificateIdentifier
                     {
                         StoreType = "Directory",
-                        StorePath = "%CommonApplicationData%\\OPC Foundation\\CertificateStores\\MachineDefault",
-                        SubjectName = "Quickstart DataAccess Client"
+                        StorePath = "OPC Foundation/CertificateStores/UA_MachineDefault",
+                        SubjectName = "UA Core Winform Client"
                     },
                     TrustedPeerCertificates = new CertificateTrustList
                     {
                         StoreType = "Directory",
-                        StorePath = "%CommonApplicationData%\\OPC Foundation\\CertificateStores\\UA Applications",
+                        StorePath = "OPC Foundation/CertificateStores/UA Applications",
                     },
                     TrustedIssuerCertificates = new CertificateTrustList
                     {
                         StoreType = "Directory",
-                        StorePath = "%CommonApplicationData%\\OPC Foundation\\CertificateStores\\UA Certificate Authorities",
+                        StorePath = "OPC Foundation/CertificateStores/UA Certificate Authorities",
                     },
                     RejectedCertificateStore = new CertificateTrustList
                     {
                         StoreType = "Directory",
-                        StorePath = "%CommonApplicationData%\\OPC Foundation\\CertificateStores\\RejectedCertificates",
+                        StorePath = "OPC Foundation/CertificateStores/RejectedCertificates",
                     },
                     NonceLength = 32,
                     AutoAcceptUntrustedCertificates = true
                 },
                 TransportConfigurations = new TransportConfigurationCollection(),
-                TransportQuotas = new TransportQuotas
-                {
-                    OperationTimeout = 600000,
-                    MaxStringLength = 1048576,
-                    MaxByteStringLength = 1048576,
-                    MaxArrayLength = 65535,
-                    MaxMessageSize = 4194304,
-                    MaxBufferSize = 65535,
-                    ChannelLifetime = 300000,
-                    SecurityTokenLifetime = 3600000
-                }
+                TransportQuotas = new TransportQuotas { OperationTimeout = 15000 },
+                ClientConfiguration = new ClientConfiguration { DefaultSessionTimeout = 60000 }
             };
+
+            Task t = config.Validate(ApplicationType.Client);
+            t.Wait();
+
+            bool haveAppCertificate = config.SecurityConfiguration.ApplicationCertificate.Certificate != null;
+
+            if (!haveAppCertificate)
+            {
+                Debug.WriteLine("    INFO: Creating new application certificate: {0}", config.ApplicationName);
+
+                X509Certificate2 certificate = CertificateFactory.CreateCertificate(
+                    config.SecurityConfiguration.ApplicationCertificate.StoreType,
+                    config.SecurityConfiguration.ApplicationCertificate.StorePath,
+                    config.ApplicationUri,
+                    config.ApplicationName,
+                    config.SecurityConfiguration.ApplicationCertificate.SubjectName
+                    );
+
+                config.SecurityConfiguration.ApplicationCertificate.Certificate = certificate;
+            }
+
+            haveAppCertificate = config.SecurityConfiguration.ApplicationCertificate.Certificate != null;
+
+            if (haveAppCertificate)
+            {
+                config.ApplicationUri = Utils.GetApplicationUriFromCertificate(config.SecurityConfiguration.ApplicationCertificate.Certificate);
+
+                if (config.SecurityConfiguration.AutoAcceptUntrustedCertificates)
+                {
+                    config.CertificateValidator.CertificateValidation += new CertificateValidationEventHandler(CertificateValidator_CertificateValidation);
+                }
+            }
+            else
+            {
+                Console.WriteLine("    WARN: missing application certificate, using unsecure connection.");
+            }
             return config;
+        }
+
+        private static void CertificateValidator_CertificateValidation(CertificateValidator validator, CertificateValidationEventArgs e)
+        {
+            Debug.WriteLine("Accepted Certificate: {0}", e.Certificate.Subject);
+            e.Accept = (e.Error.StatusCode == StatusCodes.BadCertificateUntrusted);
         }
     }
 }

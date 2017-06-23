@@ -263,7 +263,7 @@ namespace TongFang.OpcUa.Client
             EndpointConfiguration endpointConfiguration = EndpointConfiguration.Create(m_configuration);
             ConfiguredEndpoint endpoint = new ConfiguredEndpoint(null, endpointDescription, endpointConfiguration);
 
-            m_session = Session.Create(
+            Task<Session> tse = Session.Create(
                 m_configuration,
                 endpoint,
                 false,
@@ -271,7 +271,9 @@ namespace TongFang.OpcUa.Client
                 (String.IsNullOrEmpty(SessionName)) ? m_configuration.ApplicationName : SessionName,
                 60000,
                 UserIdentity,
-                PreferredLocales).Result;
+                PreferredLocales);
+            tse.Wait();
+            m_session = tse.Result;
 
             // set up keep alive callback.
             m_session.KeepAlive += new KeepAliveEventHandler(Session_KeepAlive);

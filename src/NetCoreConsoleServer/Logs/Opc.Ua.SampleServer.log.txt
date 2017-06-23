@@ -1,0 +1,663 @@
+
+************************* Logging started at 06/23/2017 14:42:32
+14:42:32.229 Checking application instance certificate.
+14:42:32.236 Checking application instance certificate. CN=UA Core Sample Server, C=US, S=Arizona, L="16101 N. 82nd Street, Scottsdale", O=OPC Foundation, DC=jmworkpc
+14:42:32.304 Checking domains in certificate. CN=UA Core Sample Server, C=US, S=Arizona, L="16101 N. 82nd Street, Scottsdale", O=OPC Foundation, DC=jmworkpc
+14:42:32.322 Adding certificate to discovery server trust list.
+14:42:32.323 Could not find the discovery server configuration file. Please confirm that it is installed.
+14:42:32.574 The server is starting.
+14:42:33.794 Server: Session Monitor Thread Started.
+14:42:33.797 Server: Publish Subscriptions Thread Started.
+14:42:59.672 Channel 1 in Connecting state.
+14:42:59.674 TCPSERVERCHANNEL SOCKET ATTACHED: 03CE0BB8, ChannelId=1
+14:42:59.747 Channel 2 in Connecting state.
+14:42:59.748 TCPSERVERCHANNEL SOCKET ATTACHED: 037A9C05, ChannelId=2
+14:42:59.758 TCPSERVERCHANNEL ForceChannelFault Socket=037A9C05, ChannelId=0, TokenId=0, Reason=Id: BadConnectionClosed
+Description: Remote side closed connection
+14:42:59.759 Channel 2 in Faulted state.
+14:42:59.760 Channel 1 in Opening state.
+14:42:59.795 Security Policy: http://opcfoundation.org/UA/SecurityPolicy#None
+14:42:59.805 Sender Certificate: (none)
+14:42:59.808 Token #0 created. CreatedAt = 06:42:59.808 . Lifetime = 3600000
+14:42:59.831 SECURE CHANNEL CREATED [TcpServerChannel UA-TCP 1.03.340.0] [ID=1] Connected To: opc.tcp://jmworkpc:51210/UA/SampleServer
+14:42:59.835 Token #1 activated. CreatedAt = 06:42:59.808 . Lifetime = 3600000
+14:42:59.836 Channel 1 in Open state.
+14:42:59.837 Channel 1: SendOpenSecureChannelResponse()
+14:42:59.902 Channel 1: ProcessRequestMessage 1
+14:42:59.921 Channel 1: SendResponse 1
+14:42:59.947 TCPSERVERCHANNEL ProcessCloseSecureChannelRequest Socket=03CE0BB8, ChannelId=1, TokenId=1
+14:42:59.958 Channel 1 in Closed state.
+14:42:59.962 Channel 1 closed
+14:43:00.034 Channel 3 in Connecting state.
+14:43:00.042 TCPSERVERCHANNEL SOCKET ATTACHED: 00AEC740, ChannelId=3
+14:43:00.042 TCPSERVERCHANNEL ForceChannelFault Socket=00AEC740, ChannelId=0, TokenId=0, Reason=Id: BadConnectionClosed
+Description: Remote side closed connection
+14:43:00.043 Channel 3 in Faulted state.
+14:43:00.043 Channel 4 in Connecting state.
+14:43:00.044 TCPSERVERCHANNEL SOCKET ATTACHED: 024CBD2A, ChannelId=4
+14:43:00.045 Channel 4 in Opening state.
+14:43:00.091 ***EXCEPTION*** BadCertificateUntrusted 'Certificate is not trusted.
+SubjectName: CN=UA Core Winform Client, DC=jmworkpc
+IssuerName: CN=UA Core Winform Client, DC=jmworkpc' Certificate is not trusted.
+SubjectName: CN=UA Core Winform Client, DC=jmworkpc
+IssuerName: CN=UA Core Winform Client, DC=jmworkpc
+14:43:00.093 Cert Validate failed: BadCertificateUntrusted
+14:43:00.122 Certificate 'CN=UA Core Winform Client, DC=jmworkpc' rejected. Reason=BadCertificateUntrusted
+14:43:00.123 Writing rejected certificate to directory: [Directory]../OPC Foundation/CertificateStores/RejectedCertificates
+14:43:00.141 ***EXCEPTION*** BadCertificateUntrusted ServiceResultException Certificate is not trusted.
+SubjectName: CN=UA Core Winform Client, DC=jmworkpc
+IssuerName: CN=UA Core Winform Client, DC=jmworkpc
+14:43:00.142 TCPSERVERCHANNEL ForceChannelFault Socket=024CBD2A, ChannelId=0, TokenId=0, Reason=Id: BadSecurityChecksFailed
+Description: Certificate is not trusted.
+SubjectName: CN=UA Core Winform Client, DC=jmworkpc
+IssuerName: CN=UA Core Winform Client, DC=jmworkpc
+14:43:00.146 Channel 4: SendErrorMessage()
+14:43:00.147 Channel 4 in Faulted state.
+14:43:00.158 TCPSERVERCHANNEL ForceChannelFault Socket=024CBD2A, ChannelId=0, TokenId=0, Reason=Id: BadConnectionClosed
+Description: Remote side closed connection
+14:45:51.360 Channel 5 in Connecting state.
+14:45:51.361 TCPSERVERCHANNEL SOCKET ATTACHED: 03161E6F, ChannelId=5
+14:45:51.362 Channel 6 in Connecting state.
+14:45:51.366 TCPSERVERCHANNEL SOCKET ATTACHED: 02D6909E, ChannelId=6
+14:45:51.367 TCPSERVERCHANNEL ForceChannelFault Socket=02D6909E, ChannelId=0, TokenId=0, Reason=Id: BadConnectionClosed
+Description: Remote side closed connection
+14:45:51.368 Channel 6 in Faulted state.
+14:45:51.372 Channel 5 in Opening state.
+14:45:51.387 Security Policy: http://opcfoundation.org/UA/SecurityPolicy#None
+14:45:51.387 Sender Certificate: (none)
+14:45:51.387 Token #0 created. CreatedAt = 06:45:51.387 . Lifetime = 3600000
+14:45:51.388 SECURE CHANNEL CREATED [TcpServerChannel UA-TCP 1.03.340.0] [ID=5] Connected To: opc.tcp://jmworkpc:51210/UA/SampleServer
+14:45:51.389 Token #1 activated. CreatedAt = 06:45:51.387 . Lifetime = 3600000
+14:45:51.389 Channel 5 in Open state.
+14:45:51.389 Channel 5: SendOpenSecureChannelResponse()
+14:45:51.415 Channel 5: ProcessRequestMessage 1
+14:45:51.416 Channel 5: SendResponse 1
+14:45:51.428 TCPSERVERCHANNEL ProcessCloseSecureChannelRequest Socket=03161E6F, ChannelId=5, TokenId=1
+14:45:51.428 Channel 5 in Closed state.
+14:45:51.428 Channel 5 closed
+14:45:51.499 Channel 7 in Connecting state.
+14:45:51.499 TCPSERVERCHANNEL SOCKET ATTACHED: 003F9A83, ChannelId=7
+14:45:51.501 Channel 8 in Connecting state.
+14:45:51.502 TCPSERVERCHANNEL SOCKET ATTACHED: 03ECC6CD, ChannelId=8
+14:45:51.502 Channel 7 in Opening state.
+14:45:51.504 TCPSERVERCHANNEL ForceChannelFault Socket=03ECC6CD, ChannelId=0, TokenId=0, Reason=Id: BadConnectionClosed
+Description: Remote side closed connection
+14:45:51.505 Channel 8 in Faulted state.
+14:45:51.520 ***EXCEPTION*** BadCertificateUntrusted 'Certificate is not trusted.
+SubjectName: CN=UA Core Winform Client, DC=jmworkpc
+IssuerName: CN=UA Core Winform Client, DC=jmworkpc' Certificate is not trusted.
+SubjectName: CN=UA Core Winform Client, DC=jmworkpc
+IssuerName: CN=UA Core Winform Client, DC=jmworkpc
+14:45:51.520 Cert Validate failed: BadCertificateUntrusted
+14:45:51.521 Certificate 'CN=UA Core Winform Client, DC=jmworkpc' rejected. Reason=BadCertificateUntrusted
+14:45:51.521 Writing rejected certificate to directory: [Directory]../OPC Foundation/CertificateStores/RejectedCertificates
+14:45:51.523 ***EXCEPTION*** BadCertificateUntrusted ServiceResultException Certificate is not trusted.
+SubjectName: CN=UA Core Winform Client, DC=jmworkpc
+IssuerName: CN=UA Core Winform Client, DC=jmworkpc
+14:45:51.523 TCPSERVERCHANNEL ForceChannelFault Socket=003F9A83, ChannelId=0, TokenId=0, Reason=Id: BadSecurityChecksFailed
+Description: Certificate is not trusted.
+SubjectName: CN=UA Core Winform Client, DC=jmworkpc
+IssuerName: CN=UA Core Winform Client, DC=jmworkpc
+14:45:51.523 Channel 7: SendErrorMessage()
+14:45:51.524 Channel 7 in Faulted state.
+14:45:51.528 TCPSERVERCHANNEL ForceChannelFault Socket=003F9A83, ChannelId=0, TokenId=0, Reason=Id: BadConnectionClosed
+Description: Remote side closed connection
+14:46:39.136 Channel 9 in Connecting state.
+14:46:39.137 TCPSERVERCHANNEL SOCKET ATTACHED: 03B843B5, ChannelId=9
+14:46:39.147 Channel 10 in Connecting state.
+14:46:39.152 TCPSERVERCHANNEL SOCKET ATTACHED: 02C353A1, ChannelId=10
+14:46:39.161 TCPSERVERCHANNEL ForceChannelFault Socket=02C353A1, ChannelId=0, TokenId=0, Reason=Id: BadConnectionClosed
+Description: Remote side closed connection
+14:46:39.166 Channel 10 in Faulted state.
+14:46:39.165 Channel 9 in Opening state.
+14:46:39.184 Security Policy: http://opcfoundation.org/UA/SecurityPolicy#None
+14:46:39.185 Sender Certificate: (none)
+14:46:39.186 Token #0 created. CreatedAt = 06:46:39.186 . Lifetime = 3600000
+14:46:39.187 SECURE CHANNEL CREATED [TcpServerChannel UA-TCP 1.03.340.0] [ID=9] Connected To: opc.tcp://jmworkpc:51210/UA/SampleServer
+14:46:39.188 Token #1 activated. CreatedAt = 06:46:39.186 . Lifetime = 3600000
+14:46:39.189 Channel 9 in Open state.
+14:46:39.189 Channel 9: SendOpenSecureChannelResponse()
+14:46:39.218 Channel 9: ProcessRequestMessage 1
+14:46:39.225 Channel 9: SendResponse 1
+14:46:39.235 TCPSERVERCHANNEL ProcessCloseSecureChannelRequest Socket=03B843B5, ChannelId=9, TokenId=1
+14:46:39.235 Channel 9 in Closed state.
+14:46:39.248 Channel 9 closed
+14:46:39.351 Channel 11 in Connecting state.
+14:46:39.353 TCPSERVERCHANNEL SOCKET ATTACHED: 0007134F, ChannelId=11
+14:46:39.354 TCPSERVERCHANNEL ForceChannelFault Socket=0007134F, ChannelId=0, TokenId=0, Reason=Id: BadConnectionClosed
+Description: Remote side closed connection
+14:46:39.357 Channel 11 in Faulted state.
+14:46:39.356 Channel 12 in Connecting state.
+14:46:39.359 TCPSERVERCHANNEL SOCKET ATTACHED: 01B2D8F2, ChannelId=12
+14:46:39.360 Channel 12 in Opening state.
+14:46:39.412 Security Policy: http://opcfoundation.org/UA/SecurityPolicy#Basic128Rsa15
+14:46:39.412 Sender Certificate: CN=UA Core Winform Client, DC=jmworkpc
+14:46:39.413 Token #0 created. CreatedAt = 06:46:39.413 . Lifetime = 3600000
+14:46:39.414 SECURE CHANNEL CREATED [TcpServerChannel UA-TCP 1.03.340.0] [ID=12] Connected To: opc.tcp://jmworkpc:51210/UA/SampleServer [SignAndEncrypt/Basic128Rsa15/Binary] Client Certificate: [CN=UA Core Winform Client, DC=jmworkpc] [598E3C02A458CCC11BFCC979CCCCB602CDB9976B] Server Certificate: [CN=UA Core Sample Server, C=US, S=Arizona, L="16101 N. 82nd Street, Scottsdale", O=OPC Foundation, DC=jmworkpc] [2212F3F8D068B8CF0D14C869C3199181B99A629C]
+14:46:39.420 Token #1 activated. CreatedAt = 06:46:39.413 . Lifetime = 3600000
+14:46:39.421 Channel 12 in Open state.
+14:46:39.430 Channel 12: SendOpenSecureChannelResponse()
+14:46:39.476 Channel 12: ProcessRequestMessage 1
+14:46:39.565 Session CREATED, Id=ns=6;i=115664277, Name=UA Core Winform Client, ChannelId=1d5e03e8-9b52-4b72-abc2-0b0533eefda5-12, User=Anonymous
+14:46:39.582 Server - SESSION CREATED. SessionId=ns=6;i=115664277
+14:46:39.585 Channel 12: SendResponse 1
+14:46:39.607 Channel 12: ProcessRequestMessage 3
+14:46:39.622 Session VALIDATED, Id=ns=6;i=115664277, Name=UA Core Winform Client, ChannelId=1d5e03e8-9b52-4b72-abc2-0b0533eefda5-12, User=Anonymous
+14:46:39.628 Session FIRST ACTIVATION, Id=ns=6;i=115664277, Name=UA Core Winform Client, ChannelId=1d5e03e8-9b52-4b72-abc2-0b0533eefda5-12, User=Anonymous
+14:46:39.631 Server - SESSION ACTIVATED.
+14:46:39.632 Channel 12: SendResponse 3
+14:46:39.639 Channel 12: ProcessRequestMessage 4
+14:46:39.665 Channel 12: SendResponse 4
+14:46:39.690 Channel 12: ProcessRequestMessage 5
+14:46:39.693 Channel 12: SendResponse 5
+14:46:39.695 Channel 12: ProcessRequestMessage 6
+14:46:39.736 Channel 12: SendResponse 6
+14:46:39.750 Channel 12: ProcessRequestMessage 7
+14:46:39.751 Channel 12: SendResponse 7
+14:46:39.752 Channel 12: ProcessRequestMessage 8
+14:46:39.756 Channel 12: SendResponse 8
+14:46:41.949 Channel 12: ProcessRequestMessage 9
+14:46:41.953 Channel 12: SendResponse 9
+14:46:41.956 Channel 12: ProcessRequestMessage 10
+14:46:41.957 Channel 12: SendResponse 10
+14:46:41.958 Channel 12: ProcessRequestMessage 11
+14:46:41.959 Channel 12: SendResponse 11
+14:46:43.642 Channel 12: ProcessRequestMessage 12
+14:46:43.642 Channel 12: SendResponse 12
+14:46:43.645 Channel 12: ProcessRequestMessage 13
+14:46:43.646 Channel 12: SendResponse 13
+14:46:43.647 Channel 12: ProcessRequestMessage 14
+14:46:43.648 Channel 12: SendResponse 14
+14:46:44.689 Channel 12: ProcessRequestMessage 15
+14:46:44.690 Channel 12: SendResponse 15
+14:46:48.586 Channel 12: ProcessRequestMessage 16
+14:46:48.587 Channel 12: SendResponse 16
+14:46:48.591 Channel 12: ProcessRequestMessage 17
+14:46:48.592 Channel 12: SendResponse 17
+14:46:48.593 Channel 12: ProcessRequestMessage 18
+14:46:48.593 Channel 12: SendResponse 18
+14:46:49.690 Channel 12: ProcessRequestMessage 19
+14:46:49.691 Channel 12: SendResponse 19
+14:46:50.696 Channel 12: ProcessRequestMessage 20
+14:46:50.699 Channel 12: SendResponse 20
+14:46:50.701 Channel 12: ProcessRequestMessage 21
+14:46:50.702 Channel 12: SendResponse 21
+14:46:50.702 Channel 12: ProcessRequestMessage 22
+14:46:50.703 Channel 12: SendResponse 22
+14:46:52.248 Channel 12: ProcessRequestMessage 23
+14:46:52.249 Channel 12: SendResponse 23
+14:46:52.250 Channel 12: ProcessRequestMessage 24
+14:46:52.251 Channel 12: SendResponse 24
+14:46:52.252 Channel 12: ProcessRequestMessage 25
+14:46:52.252 Channel 12: SendResponse 25
+14:46:52.881 Channel 12: ProcessRequestMessage 26
+14:46:52.881 Channel 12: SendResponse 26
+14:46:52.882 Channel 12: ProcessRequestMessage 27
+14:46:52.883 Channel 12: SendResponse 27
+14:46:52.884 Channel 12: ProcessRequestMessage 28
+14:46:52.892 Channel 12: SendResponse 28
+14:46:53.737 Channel 12: ProcessRequestMessage 29
+14:46:53.740 Channel 12: SendResponse 29
+14:46:53.742 Channel 12: ProcessRequestMessage 30
+14:46:53.742 Channel 12: SendResponse 30
+14:46:53.746 Channel 12: ProcessRequestMessage 31
+14:46:53.747 Channel 12: SendResponse 31
+14:46:54.695 Channel 12: ProcessRequestMessage 32
+14:46:54.696 Channel 12: SendResponse 32
+14:46:55.328 Channel 12: ProcessRequestMessage 33
+14:46:55.329 Channel 12: SendResponse 33
+14:46:55.331 Channel 12: ProcessRequestMessage 34
+14:46:55.340 Channel 12: SendResponse 34
+14:46:55.341 Channel 12: ProcessRequestMessage 35
+14:46:55.341 Channel 12: SendResponse 35
+14:46:57.227 Channel 12: ProcessRequestMessage 36
+14:46:57.227 Channel 12: SendResponse 36
+14:46:57.230 Channel 12: ProcessRequestMessage 37
+14:46:57.230 Channel 12: SendResponse 37
+14:46:57.231 Channel 12: ProcessRequestMessage 38
+14:46:57.232 Channel 12: SendResponse 38
+14:46:57.681 Channel 12: ProcessRequestMessage 39
+14:46:57.681 Channel 12: SendResponse 39
+14:46:57.684 Channel 12: ProcessRequestMessage 40
+14:46:57.684 Channel 12: SendResponse 40
+14:46:57.685 Channel 12: ProcessRequestMessage 41
+14:46:57.685 Channel 12: SendResponse 41
+14:46:58.417 Channel 12: ProcessRequestMessage 42
+14:46:58.418 Channel 12: SendResponse 42
+14:46:58.424 Channel 12: ProcessRequestMessage 43
+14:46:58.425 Channel 12: SendResponse 43
+14:46:58.426 Channel 12: ProcessRequestMessage 44
+14:46:58.430 Channel 12: SendResponse 44
+14:46:59.442 Channel 12: ProcessRequestMessage 45
+14:46:59.459 Channel 12: SendResponse 45
+14:46:59.463 Channel 12: ProcessRequestMessage 46
+14:46:59.467 PUBLISH #1 RECEIVED. TIME=06:46:59.463
+14:46:59.472 Publish #1 ReceivedFromClient
+14:46:59.483 Channel 12: ProcessRequestMessage 47
+14:46:59.696 Channel 12: ProcessRequestMessage 48
+14:47:00.400 Channel 12: SendResponse 47
+14:47:00.409 Channel 12: SendResponse 48
+14:47:00.460 PUBLISH: #000 Assigned To Subscription(1).
+14:47:00.472 Channel 12: SendResponse 46
+14:47:00.487 Channel 12: ProcessRequestMessage 49
+14:47:00.500 PUBLISH #2 RECEIVED. TIME=06:47:00.486
+14:47:00.502 Publish #2 ReceivedFromClient
+14:47:01.508 PUBLISH: #000 Assigned To Subscription(1).
+14:47:01.509 Channel 12: SendResponse 49
+14:47:01.511 Channel 12: ProcessRequestMessage 50
+14:47:01.511 PUBLISH #3 RECEIVED. TIME=06:47:01.511
+14:47:01.512 Publish #3 ReceivedFromClient
+14:47:02.484 PUBLISH: #000 Assigned To Subscription(1).
+14:47:02.491 Channel 12: SendResponse 50
+14:47:02.496 Channel 12: ProcessRequestMessage 51
+14:47:02.497 PUBLISH #4 RECEIVED. TIME=06:47:02.492
+14:47:02.498 Publish #4 ReceivedFromClient
+14:47:03.493 PUBLISH: #000 Assigned To Subscription(1).
+14:47:03.494 Channel 12: SendResponse 51
+14:47:03.495 Channel 12: ProcessRequestMessage 52
+14:47:03.504 PUBLISH #5 RECEIVED. TIME=06:47:03.495
+14:47:03.504 Publish #5 ReceivedFromClient
+14:47:04.500 PUBLISH: #000 Assigned To Subscription(1).
+14:47:04.509 Channel 12: SendResponse 52
+14:47:04.510 Channel 12: ProcessRequestMessage 53
+14:47:04.511 PUBLISH #6 RECEIVED. TIME=06:47:04.509
+14:47:04.513 Publish #6 ReceivedFromClient
+14:47:04.708 Channel 12: ProcessRequestMessage 54
+14:47:04.709 Channel 12: SendResponse 54
+14:47:05.452 PUBLISH: #000 Assigned To Subscription(1).
+14:47:05.453 Channel 12: SendResponse 53
+14:47:05.454 Channel 12: ProcessRequestMessage 55
+14:47:05.456 PUBLISH #7 RECEIVED. TIME=06:47:05.454
+14:47:05.457 Publish #7 ReceivedFromClient
+14:47:06.457 PUBLISH: #000 Assigned To Subscription(1).
+14:47:06.457 Channel 12: SendResponse 55
+14:47:06.458 Channel 12: ProcessRequestMessage 56
+14:47:06.459 PUBLISH #8 RECEIVED. TIME=06:47:06.458
+14:47:06.460 Publish #8 ReceivedFromClient
+14:47:07.491 PUBLISH: #000 Assigned To Subscription(1).
+14:47:07.491 Channel 12: SendResponse 56
+14:47:07.492 Channel 12: ProcessRequestMessage 57
+14:47:07.494 PUBLISH #9 RECEIVED. TIME=06:47:07.492
+14:47:07.495 Publish #9 ReceivedFromClient
+14:47:08.451 PUBLISH: #000 Assigned To Subscription(1).
+14:47:08.452 Channel 12: SendResponse 57
+14:47:08.453 Channel 12: ProcessRequestMessage 58
+14:47:08.458 PUBLISH #10 RECEIVED. TIME=06:47:08.453
+14:47:08.460 Publish #10 ReceivedFromClient
+14:47:09.468 PUBLISH: #000 Assigned To Subscription(1).
+14:47:09.469 Channel 12: SendResponse 58
+14:47:09.472 Channel 12: ProcessRequestMessage 59
+14:47:09.474 PUBLISH #11 RECEIVED. TIME=06:47:09.472
+14:47:09.476 Publish #11 ReceivedFromClient
+14:47:09.699 Channel 12: ProcessRequestMessage 60
+14:47:09.700 Channel 12: SendResponse 60
+14:47:10.466 PUBLISH: #000 Assigned To Subscription(1).
+14:47:10.467 Channel 12: SendResponse 59
+14:47:10.468 Channel 12: ProcessRequestMessage 61
+14:47:10.477 PUBLISH #12 RECEIVED. TIME=06:47:10.468
+14:47:10.479 Publish #12 ReceivedFromClient
+14:47:11.477 PUBLISH: #000 Assigned To Subscription(1).
+14:47:11.478 Channel 12: SendResponse 61
+14:47:11.480 Channel 12: ProcessRequestMessage 62
+14:47:11.481 PUBLISH #13 RECEIVED. TIME=06:47:11.479
+14:47:11.482 Publish #13 ReceivedFromClient
+14:47:12.486 PUBLISH: #000 Assigned To Subscription(1).
+14:47:12.487 Channel 12: SendResponse 62
+14:47:12.488 Channel 12: ProcessRequestMessage 63
+14:47:12.489 PUBLISH #14 RECEIVED. TIME=06:47:12.488
+14:47:12.490 Publish #14 ReceivedFromClient
+14:47:13.507 PUBLISH: #000 Assigned To Subscription(1).
+14:47:13.509 Channel 12: SendResponse 63
+14:47:13.511 Channel 12: ProcessRequestMessage 64
+14:47:13.512 PUBLISH #15 RECEIVED. TIME=06:47:13.510
+14:47:13.513 Publish #15 ReceivedFromClient
+14:47:14.498 PUBLISH: #000 Assigned To Subscription(1).
+14:47:14.498 Channel 12: SendResponse 64
+14:47:14.499 Channel 12: ProcessRequestMessage 65
+14:47:14.500 PUBLISH #16 RECEIVED. TIME=06:47:14.499
+14:47:14.500 Publish #16 ReceivedFromClient
+14:47:14.701 Channel 12: ProcessRequestMessage 66
+14:47:14.701 Channel 12: SendResponse 66
+14:47:15.484 PUBLISH: #000 Assigned To Subscription(1).
+14:47:15.491 Channel 12: SendResponse 65
+14:47:15.492 Channel 12: ProcessRequestMessage 67
+14:47:15.497 PUBLISH #17 RECEIVED. TIME=06:47:15.492
+14:47:15.497 Publish #17 ReceivedFromClient
+14:47:16.465 PUBLISH: #000 Assigned To Subscription(1).
+14:47:16.466 Channel 12: SendResponse 67
+14:47:16.467 Channel 12: ProcessRequestMessage 68
+14:47:16.467 PUBLISH #18 RECEIVED. TIME=06:47:16.466
+14:47:16.468 Publish #18 ReceivedFromClient
+14:47:17.477 PUBLISH: #000 Assigned To Subscription(1).
+14:47:17.478 Channel 12: SendResponse 68
+14:47:17.480 Channel 12: ProcessRequestMessage 69
+14:47:17.482 PUBLISH #19 RECEIVED. TIME=06:47:17.479
+14:47:17.482 Publish #19 ReceivedFromClient
+14:47:18.473 PUBLISH: #000 Assigned To Subscription(1).
+14:47:18.473 Channel 12: SendResponse 69
+14:47:18.480 Channel 12: ProcessRequestMessage 70
+14:47:18.481 PUBLISH #20 RECEIVED. TIME=06:47:18.479
+14:47:18.481 Publish #20 ReceivedFromClient
+14:47:19.467 PUBLISH: #000 Assigned To Subscription(1).
+14:47:19.468 Channel 12: SendResponse 70
+14:47:19.470 Channel 12: ProcessRequestMessage 71
+14:47:19.483 PUBLISH #21 RECEIVED. TIME=06:47:19.469
+14:47:19.484 Publish #21 ReceivedFromClient
+14:47:19.709 Channel 12: ProcessRequestMessage 72
+14:47:19.710 Channel 12: SendResponse 72
+14:47:20.453 PUBLISH: #000 Assigned To Subscription(1).
+14:47:20.454 Channel 12: SendResponse 71
+14:47:20.455 Channel 12: ProcessRequestMessage 73
+14:47:20.458 PUBLISH #22 RECEIVED. TIME=06:47:20.454
+14:47:20.458 Publish #22 ReceivedFromClient
+14:47:21.492 PUBLISH: #000 Assigned To Subscription(1).
+14:47:21.495 Channel 12: SendResponse 73
+14:47:21.497 Channel 12: ProcessRequestMessage 74
+14:47:21.498 PUBLISH #23 RECEIVED. TIME=06:47:21.496
+14:47:21.499 Publish #23 ReceivedFromClient
+14:47:22.487 PUBLISH: #000 Assigned To Subscription(1).
+14:47:22.487 Channel 12: SendResponse 74
+14:47:22.491 Channel 12: ProcessRequestMessage 75
+14:47:22.492 PUBLISH #24 RECEIVED. TIME=06:47:22.491
+14:47:22.492 Publish #24 ReceivedFromClient
+14:47:23.452 PUBLISH: #000 Assigned To Subscription(1).
+14:47:23.454 Channel 12: SendResponse 75
+14:47:23.456 Channel 12: ProcessRequestMessage 76
+14:47:23.456 PUBLISH #25 RECEIVED. TIME=06:47:23.455
+14:47:23.457 Publish #25 ReceivedFromClient
+14:47:24.466 PUBLISH: #000 Assigned To Subscription(1).
+14:47:24.466 Channel 12: SendResponse 76
+14:47:24.469 Channel 12: ProcessRequestMessage 77
+14:47:24.470 PUBLISH #26 RECEIVED. TIME=06:47:24.469
+14:47:24.470 Publish #26 ReceivedFromClient
+14:47:24.703 Channel 12: ProcessRequestMessage 78
+14:47:24.704 Channel 12: SendResponse 78
+14:47:25.458 PUBLISH: #000 Assigned To Subscription(1).
+14:47:25.459 Channel 12: SendResponse 77
+14:47:25.460 Channel 12: ProcessRequestMessage 79
+14:47:25.460 PUBLISH #27 RECEIVED. TIME=06:47:25.460
+14:47:25.461 Publish #27 ReceivedFromClient
+14:47:26.490 PUBLISH: #000 Assigned To Subscription(1).
+14:47:26.500 Channel 12: SendResponse 79
+14:47:26.502 Channel 12: ProcessRequestMessage 80
+14:47:26.503 PUBLISH #28 RECEIVED. TIME=06:47:26.501
+14:47:26.504 Publish #28 ReceivedFromClient
+14:47:27.505 PUBLISH: #000 Assigned To Subscription(1).
+14:47:27.506 Channel 12: SendResponse 80
+14:47:27.507 Channel 12: ProcessRequestMessage 81
+14:47:27.508 PUBLISH #29 RECEIVED. TIME=06:47:27.507
+14:47:27.508 Publish #29 ReceivedFromClient
+14:47:28.458 PUBLISH: #000 Assigned To Subscription(1).
+14:47:28.460 Channel 12: SendResponse 81
+14:47:28.464 Channel 12: ProcessRequestMessage 82
+14:47:28.466 PUBLISH #30 RECEIVED. TIME=06:47:28.464
+14:47:28.467 Publish #30 ReceivedFromClient
+14:47:29.461 PUBLISH: #000 Assigned To Subscription(1).
+14:47:29.465 Channel 12: SendResponse 82
+14:47:29.468 Channel 12: ProcessRequestMessage 83
+14:47:29.469 PUBLISH #31 RECEIVED. TIME=06:47:29.468
+14:47:29.470 Publish #31 ReceivedFromClient
+14:47:29.714 Channel 12: ProcessRequestMessage 84
+14:47:29.715 Channel 12: SendResponse 84
+14:47:30.499 PUBLISH: #000 Assigned To Subscription(1).
+14:47:30.500 Channel 12: SendResponse 83
+14:47:30.501 Channel 12: ProcessRequestMessage 85
+14:47:30.509 PUBLISH #32 RECEIVED. TIME=06:47:30.501
+14:47:30.513 Publish #32 ReceivedFromClient
+14:47:31.454 PUBLISH: #000 Assigned To Subscription(1).
+14:47:31.455 Channel 12: SendResponse 85
+14:47:31.457 Channel 12: ProcessRequestMessage 86
+14:47:31.459 PUBLISH #33 RECEIVED. TIME=06:47:31.456
+14:47:31.459 Publish #33 ReceivedFromClient
+14:47:32.482 PUBLISH: #000 Assigned To Subscription(1).
+14:47:32.482 Channel 12: SendResponse 86
+14:47:32.483 Channel 12: ProcessRequestMessage 87
+14:47:32.484 PUBLISH #34 RECEIVED. TIME=06:47:32.483
+14:47:32.484 Publish #34 ReceivedFromClient
+14:47:33.490 PUBLISH: #000 Assigned To Subscription(1).
+14:47:33.491 Channel 12: SendResponse 87
+14:47:33.492 Channel 12: ProcessRequestMessage 88
+14:47:33.493 PUBLISH #35 RECEIVED. TIME=06:47:33.492
+14:47:33.493 Publish #35 ReceivedFromClient
+14:47:34.454 PUBLISH: #000 Assigned To Subscription(1).
+14:47:34.455 Channel 12: SendResponse 88
+14:47:34.456 Channel 12: ProcessRequestMessage 89
+14:47:34.457 PUBLISH #36 RECEIVED. TIME=06:47:34.456
+14:47:34.458 Publish #36 ReceivedFromClient
+14:47:34.715 Channel 12: ProcessRequestMessage 90
+14:47:34.716 Channel 12: SendResponse 90
+14:47:35.451 PUBLISH: #000 Assigned To Subscription(1).
+14:47:35.460 Channel 12: SendResponse 89
+14:47:35.462 Channel 12: ProcessRequestMessage 91
+14:47:35.464 PUBLISH #37 RECEIVED. TIME=06:47:35.462
+14:47:35.464 Publish #37 ReceivedFromClient
+14:47:36.471 PUBLISH: #000 Assigned To Subscription(1).
+14:47:36.471 Channel 12: SendResponse 91
+14:47:36.472 Channel 12: ProcessRequestMessage 92
+14:47:36.473 PUBLISH #38 RECEIVED. TIME=06:47:36.472
+14:47:36.474 Publish #38 ReceivedFromClient
+14:47:37.466 PUBLISH: #000 Assigned To Subscription(1).
+14:47:37.467 Channel 12: SendResponse 92
+14:47:37.468 Channel 12: ProcessRequestMessage 93
+14:47:37.469 PUBLISH #39 RECEIVED. TIME=06:47:37.468
+14:47:37.471 Publish #39 ReceivedFromClient
+14:47:38.477 PUBLISH: #000 Assigned To Subscription(1).
+14:47:38.478 Channel 12: SendResponse 93
+14:47:38.480 Channel 12: ProcessRequestMessage 94
+14:47:38.481 PUBLISH #40 RECEIVED. TIME=06:47:38.480
+14:47:38.482 Publish #40 ReceivedFromClient
+14:47:39.451 PUBLISH: #000 Assigned To Subscription(1).
+14:47:39.452 Channel 12: SendResponse 94
+14:47:39.454 Channel 12: ProcessRequestMessage 95
+14:47:39.455 PUBLISH #41 RECEIVED. TIME=06:47:39.454
+14:47:39.455 Publish #41 ReceivedFromClient
+14:47:39.737 Channel 12: ProcessRequestMessage 96
+14:47:39.739 Channel 12: SendResponse 96
+14:47:40.491 PUBLISH: #000 Assigned To Subscription(1).
+14:47:40.491 Channel 12: SendResponse 95
+14:47:40.492 Channel 12: ProcessRequestMessage 97
+14:47:40.493 PUBLISH #42 RECEIVED. TIME=06:47:40.492
+14:47:40.493 Publish #42 ReceivedFromClient
+14:47:41.490 PUBLISH: #000 Assigned To Subscription(1).
+14:47:41.490 Channel 12: SendResponse 97
+14:47:41.505 Channel 12: ProcessRequestMessage 98
+14:47:41.505 PUBLISH #43 RECEIVED. TIME=06:47:41.504
+14:47:41.512 Publish #43 ReceivedFromClient
+14:47:42.502 PUBLISH: #000 Assigned To Subscription(1).
+14:47:42.502 Channel 12: SendResponse 98
+14:47:42.508 Channel 12: ProcessRequestMessage 99
+14:47:42.509 PUBLISH #44 RECEIVED. TIME=06:47:42.503
+14:47:42.509 Publish #44 ReceivedFromClient
+14:47:43.500 PUBLISH: #000 Assigned To Subscription(1).
+14:47:43.501 Channel 12: SendResponse 99
+14:47:43.502 Channel 12: ProcessRequestMessage 100
+14:47:43.503 PUBLISH #45 RECEIVED. TIME=06:47:43.502
+14:47:43.503 Publish #45 ReceivedFromClient
+14:47:44.502 PUBLISH: #000 Assigned To Subscription(1).
+14:47:44.506 Channel 12: SendResponse 100
+14:47:44.509 Channel 12: ProcessRequestMessage 101
+14:47:44.510 PUBLISH #46 RECEIVED. TIME=06:47:44.509
+14:47:44.526 Publish #46 ReceivedFromClient
+14:47:44.738 Channel 12: ProcessRequestMessage 102
+14:47:44.739 Channel 12: SendResponse 102
+14:47:45.473 PUBLISH: #000 Assigned To Subscription(1).
+14:47:45.474 Channel 12: SendResponse 101
+14:47:45.478 Channel 12: ProcessRequestMessage 103
+14:47:45.480 PUBLISH #47 RECEIVED. TIME=06:47:45.475
+14:47:45.495 Publish #47 ReceivedFromClient
+14:47:46.475 PUBLISH: #000 Assigned To Subscription(1).
+14:47:46.487 Channel 12: SendResponse 103
+14:47:46.539 Channel 12: ProcessRequestMessage 104
+14:47:46.541 PUBLISH #48 RECEIVED. TIME=06:47:46.538
+14:47:46.542 Publish #48 ReceivedFromClient
+14:47:47.493 PUBLISH: #000 Assigned To Subscription(1).
+14:47:47.493 Channel 12: SendResponse 104
+14:47:47.496 Channel 12: ProcessRequestMessage 105
+14:47:47.497 PUBLISH #49 RECEIVED. TIME=06:47:47.496
+14:47:47.497 Publish #49 ReceivedFromClient
+14:47:48.453 PUBLISH: #000 Assigned To Subscription(1).
+14:47:48.454 Channel 12: SendResponse 105
+14:47:48.459 Channel 12: ProcessRequestMessage 106
+14:47:48.460 PUBLISH #50 RECEIVED. TIME=06:47:48.458
+14:47:48.460 Publish #50 ReceivedFromClient
+14:47:49.480 PUBLISH: #000 Assigned To Subscription(1).
+14:47:49.481 Channel 12: SendResponse 106
+14:47:49.482 Channel 12: ProcessRequestMessage 107
+14:47:49.483 PUBLISH #51 RECEIVED. TIME=06:47:49.482
+14:47:49.483 Publish #51 ReceivedFromClient
+14:47:49.739 Channel 12: ProcessRequestMessage 108
+14:47:49.740 Channel 12: SendResponse 108
+14:47:50.468 PUBLISH: #000 Assigned To Subscription(1).
+14:47:50.468 Channel 12: SendResponse 107
+14:47:50.469 Channel 12: ProcessRequestMessage 109
+14:47:50.470 PUBLISH #52 RECEIVED. TIME=06:47:50.469
+14:47:50.470 Publish #52 ReceivedFromClient
+14:47:51.464 PUBLISH: #000 Assigned To Subscription(1).
+14:47:51.465 Channel 12: SendResponse 109
+14:47:51.466 Channel 12: ProcessRequestMessage 110
+14:47:51.466 PUBLISH #53 RECEIVED. TIME=06:47:51.465
+14:47:51.466 Publish #53 ReceivedFromClient
+14:47:52.502 PUBLISH: #000 Assigned To Subscription(1).
+14:47:52.502 Channel 12: SendResponse 110
+14:47:52.505 Channel 12: ProcessRequestMessage 111
+14:47:52.505 PUBLISH #54 RECEIVED. TIME=06:47:52.504
+14:47:52.506 Publish #54 ReceivedFromClient
+14:47:53.486 PUBLISH: #000 Assigned To Subscription(1).
+14:47:53.486 Channel 12: SendResponse 111
+14:47:53.487 Channel 12: ProcessRequestMessage 112
+14:47:53.488 PUBLISH #55 RECEIVED. TIME=06:47:53.487
+14:47:53.488 Publish #55 ReceivedFromClient
+14:47:54.497 PUBLISH: #000 Assigned To Subscription(1).
+14:47:54.499 Channel 12: SendResponse 112
+14:47:54.502 Channel 12: ProcessRequestMessage 113
+14:47:54.504 PUBLISH #56 RECEIVED. TIME=06:47:54.501
+14:47:54.505 Publish #56 ReceivedFromClient
+14:47:54.747 Channel 12: ProcessRequestMessage 114
+14:47:54.748 Channel 12: SendResponse 114
+14:47:55.476 PUBLISH: #000 Assigned To Subscription(1).
+14:47:55.477 Channel 12: SendResponse 113
+14:47:55.479 Channel 12: ProcessRequestMessage 115
+14:47:55.481 PUBLISH #57 RECEIVED. TIME=06:47:55.478
+14:47:55.481 Publish #57 ReceivedFromClient
+14:47:56.475 PUBLISH: #000 Assigned To Subscription(1).
+14:47:56.476 Channel 12: SendResponse 115
+14:47:56.477 Channel 12: ProcessRequestMessage 116
+14:47:56.479 PUBLISH #58 RECEIVED. TIME=06:47:56.477
+14:47:56.480 Publish #58 ReceivedFromClient
+14:47:57.480 PUBLISH: #000 Assigned To Subscription(1).
+14:47:57.480 Channel 12: SendResponse 116
+14:47:57.481 Channel 12: ProcessRequestMessage 117
+14:47:57.482 PUBLISH #59 RECEIVED. TIME=06:47:57.481
+14:47:57.482 Publish #59 ReceivedFromClient
+14:47:58.451 PUBLISH: #000 Assigned To Subscription(1).
+14:47:58.452 Channel 12: SendResponse 117
+14:47:58.471 Channel 12: ProcessRequestMessage 118
+14:47:58.473 PUBLISH #60 RECEIVED. TIME=06:47:58.470
+14:47:58.473 Publish #60 ReceivedFromClient
+14:47:59.489 PUBLISH: #000 Assigned To Subscription(1).
+14:47:59.489 Channel 12: SendResponse 118
+14:47:59.492 Channel 12: ProcessRequestMessage 119
+14:47:59.494 PUBLISH #61 RECEIVED. TIME=06:47:59.491
+14:47:59.501 Publish #61 ReceivedFromClient
+14:47:59.750 Channel 12: ProcessRequestMessage 120
+14:47:59.751 Channel 12: SendResponse 120
+14:47:59.767 TCPSERVERCHANNEL Cleanup Socket=037A9C05, ChannelId=0, TokenId=0, Reason=Id: BadConnectionClosed
+Description: Remote side closed connection
+14:47:59.791 Unexpected error closing socket. SocketException '远程主机强迫关闭了一个现有的连接。'
+
+========================================
+Id: Bad
+Description: 远程主机强迫关闭了一个现有的连接。
+>>> 远程主机强迫关闭了一个现有的连接。
+---    at System.Net.Sockets.Socket.Shutdown(SocketShutdown how)
+---    at Opc.Ua.Bindings.TcpMessageSocket.Close() in d:\a\1\s\Stack\Opc.Ua.Core\Stack\Tcp\TcpMessageSocket.cs:line 447
+========================================
+
+14:47:59.793 Channel 2 in Closed state.
+14:47:59.794 Channel 2 closed
+14:48:00.052 TCPSERVERCHANNEL Cleanup Socket=00AEC740, ChannelId=0, TokenId=0, Reason=Id: BadConnectionClosed
+Description: Remote side closed connection
+14:48:00.059 Unexpected error closing socket. SocketException '远程主机强迫关闭了一个现有的连接。'
+
+========================================
+Id: Bad
+Description: 远程主机强迫关闭了一个现有的连接。
+>>> 远程主机强迫关闭了一个现有的连接。
+---    at System.Net.Sockets.Socket.Shutdown(SocketShutdown how)
+---    at Opc.Ua.Bindings.TcpMessageSocket.Close() in d:\a\1\s\Stack\Opc.Ua.Core\Stack\Tcp\TcpMessageSocket.cs:line 447
+========================================
+
+14:48:00.064 Channel 3 in Closed state.
+14:48:00.072 Channel 3 closed
+14:48:00.156 TCPSERVERCHANNEL Cleanup Socket=024CBD2A, ChannelId=0, TokenId=0, Reason=Id: BadSecurityChecksFailed
+Description: Certificate is not trusted.
+SubjectName: CN=UA Core Winform Client, DC=jmworkpc
+IssuerName: CN=UA Core Winform Client, DC=jmworkpc
+14:48:00.157 Unexpected error closing socket. SocketException '远程主机强迫关闭了一个现有的连接。'
+
+========================================
+Id: Bad
+Description: 远程主机强迫关闭了一个现有的连接。
+>>> 远程主机强迫关闭了一个现有的连接。
+---    at System.Net.Sockets.Socket.Shutdown(SocketShutdown how)
+---    at Opc.Ua.Bindings.TcpMessageSocket.Close() in d:\a\1\s\Stack\Opc.Ua.Core\Stack\Tcp\TcpMessageSocket.cs:line 447
+========================================
+
+14:48:00.165 Channel 4 in Closed state.
+14:48:00.171 Channel 4 closed
+14:48:00.499 PUBLISH: #000 Assigned To Subscription(1).
+14:48:00.517 Channel 12: SendResponse 119
+14:48:00.530 Channel 12: ProcessRequestMessage 121
+14:48:00.530 PUBLISH #62 RECEIVED. TIME=06:48:00.530
+14:48:00.531 Publish #62 ReceivedFromClient
+14:48:01.478 PUBLISH: #000 Assigned To Subscription(1).
+14:48:01.479 Channel 12: SendResponse 121
+14:48:01.481 Channel 12: ProcessRequestMessage 122
+14:48:01.482 PUBLISH #63 RECEIVED. TIME=06:48:01.481
+14:48:01.483 Publish #63 ReceivedFromClient
+14:48:02.495 PUBLISH: #000 Assigned To Subscription(1).
+14:48:02.496 Channel 12: SendResponse 122
+14:48:02.497 Channel 12: ProcessRequestMessage 123
+14:48:02.498 PUBLISH #64 RECEIVED. TIME=06:48:02.497
+14:48:02.498 Publish #64 ReceivedFromClient
+14:48:03.490 PUBLISH: #000 Assigned To Subscription(1).
+14:48:03.491 Channel 12: SendResponse 123
+14:48:03.495 Channel 12: ProcessRequestMessage 124
+14:48:03.510 PUBLISH #65 RECEIVED. TIME=06:48:03.494
+14:48:03.511 Publish #65 ReceivedFromClient
+14:48:04.503 PUBLISH: #000 Assigned To Subscription(1).
+14:48:04.505 Channel 12: SendResponse 124
+14:48:04.506 Channel 12: ProcessRequestMessage 125
+14:48:04.507 PUBLISH #66 RECEIVED. TIME=06:48:04.506
+14:48:04.507 Publish #66 ReceivedFromClient
+14:48:04.753 Channel 12: ProcessRequestMessage 126
+14:48:04.753 Channel 12: SendResponse 126
+14:48:05.494 PUBLISH: #000 Assigned To Subscription(1).
+14:48:05.496 Channel 12: SendResponse 125
+14:48:05.498 Channel 12: ProcessRequestMessage 127
+14:48:05.499 PUBLISH #67 RECEIVED. TIME=06:48:05.498
+14:48:05.500 Publish #67 ReceivedFromClient
+14:48:06.473 PUBLISH: #000 Assigned To Subscription(1).
+14:48:06.475 Channel 12: SendResponse 127
+14:48:06.476 Channel 12: ProcessRequestMessage 128
+14:48:06.477 PUBLISH #68 RECEIVED. TIME=06:48:06.476
+14:48:06.477 Publish #68 ReceivedFromClient
+14:48:07.454 PUBLISH: #000 Assigned To Subscription(1).
+14:48:07.455 Channel 12: SendResponse 128
+14:48:07.456 Channel 12: ProcessRequestMessage 129
+14:48:07.457 PUBLISH #69 RECEIVED. TIME=06:48:07.456
+14:48:07.457 Publish #69 ReceivedFromClient
+14:48:08.481 PUBLISH: #000 Assigned To Subscription(1).
+14:48:08.481 Channel 12: SendResponse 129
+14:48:08.482 Channel 12: ProcessRequestMessage 130
+14:48:08.483 PUBLISH #70 RECEIVED. TIME=06:48:08.482
+14:48:08.483 Publish #70 ReceivedFromClient
+14:48:09.412 TCPSERVERCHANNEL ForceChannelFault Socket=01B2D8F2, ChannelId=12, TokenId=1, Reason=Id: BadConnectionClosed
+Description: Remote side closed connection
+14:48:09.412 Channel 12 in Faulted state.
+14:48:09.491 PUBLISH: #000 Assigned To Subscription(1).
+14:48:40.459 Subscription EXPIRED, Id=1, Publishing=1000, KeepAlive=10, LifeTime=30, Enabled=True, KeepAliveCount=30, LifeTimeCount=30, WaitingForPublish=True, SeqNo=71, ItemCount=1, ItemsToCheck=0, ItemsToPublish=1, MessageCount=1
+14:48:40.462 Server: 1 Subscriptions scheduled for delete.
+14:48:40.471 Server: CleanupSubscriptions Task Started
+14:48:40.491 Server: CleanupSubscriptions Task Completed
+14:49:13.842 Session CLOSED, Id=ns=6;i=115664277, Name=UA Core Winform Client, ChannelId=1d5e03e8-9b52-4b72-abc2-0b0533eefda5-12, User=Anonymous

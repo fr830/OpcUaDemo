@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.26430.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpcUa.WinFormClient", "src\OpcUa.WinFormClient\OpcUa.WinFormClient.csproj", "{A8EB3B7D-1A92-4BB5-918B-78B370015B6F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCoreConsoleServer", "src\NetCoreConsoleServer\NetCoreConsoleServer.csproj", "{D7BE000E-0D90-4A82-BA8C-0700990F1C7F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCoreConsoleClient", "src\NetCoreConsoleClient\NetCoreConsoleClient.csproj", "{ED9C7E73-0582-4974-8E85-09D595D1101C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{A8EB3B7D-1A92-4BB5-918B-78B370015B6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A8EB3B7D-1A92-4BB5-918B-78B370015B6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A8EB3B7D-1A92-4BB5-918B-78B370015B6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7BE000E-0D90-4A82-BA8C-0700990F1C7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7BE000E-0D90-4A82-BA8C-0700990F1C7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7BE000E-0D90-4A82-BA8C-0700990F1C7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7BE000E-0D90-4A82-BA8C-0700990F1C7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED9C7E73-0582-4974-8E85-09D595D1101C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED9C7E73-0582-4974-8E85-09D595D1101C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED9C7E73-0582-4974-8E85-09D595D1101C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED9C7E73-0582-4974-8E85-09D595D1101C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

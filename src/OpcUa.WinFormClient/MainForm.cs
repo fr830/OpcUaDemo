@@ -33,7 +33,7 @@ namespace TongFang.OpcUa.Client
             InitializeComponent();
 
             ConnectServerCTRL.Configuration = m_configuration = configuration;
-            ConnectServerCTRL.ServerUrl = "opc.tcp://localhost:62547/Quickstarts/DataAccessServer";
+            ConnectServerCTRL.ServerUrl = "opc.tcp://" + Utils.GetHostName() + ":51210/UA/SampleServer";
             this.Text = m_configuration.ApplicationName;
 
             // create the callback.
