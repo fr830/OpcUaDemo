@@ -18,26 +18,27 @@ namespace TongFang.OpcUa.Client
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            ApplicationInstance application = new ApplicationInstance();
-            application.ApplicationType = ApplicationType.Client;
-            application.ConfigSectionName = "DataAccessClient";
-
             try
             {
-                // load the application configuration.
-                application.LoadApplicationConfiguration(false);
-
-                // check the application certificate.
-                application.CheckApplicationInstanceCertificate(false, 0);
-
-                // run the application interactively.
-                Application.Run(new MainForm(application.ApplicationConfiguration));
+                ApplicationConfiguration appConfig = GetApplicationConfiguration();
+                Application.Run(new MainForm(appConfig));
             }
             catch (Exception e)
             {
-                ExceptionHelper.ShowExceptionDlg(application.ApplicationName, e);
+                ExceptionHelper.ShowExceptionDlg("软件初始化", e);
                 return;
             }
+        }
+
+        public static ApplicationConfiguration GetApplicationConfiguration()
+        {
+            ApplicationConfiguration config = new ApplicationConfiguration
+            {
+                ApplicationName = "Data Access Client",
+                ApplicationType = ApplicationType.Client,
+                 ApplicationUri = 
+            };
+            return config;
         }
     }
 }
