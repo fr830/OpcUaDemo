@@ -181,11 +181,11 @@ namespace NetCoreConsoleClient
                 },
                 new MonitoredItem(subscription.DefaultItem)
                 {
-                    DisplayName = "Test1", StartNodeId = "ns=4;i=1286"
+                    DisplayName = "Test", StartNodeId = "ns=4;i=1259"
                 },
                 new MonitoredItem(subscription.DefaultItem)
                 {
-                    DisplayName = "Test2", StartNodeId = "ns=4;i=1259"
+                    DisplayName = "NS=5", StartNodeId = "ns=5;i=15"
                 }
             };
             list.ForEach(i => i.Notification += OnNotification);
