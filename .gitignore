@@ -262,3 +262,7 @@ __pycache__/
 /help/webhelp
 /help/webhelp/whxdata
 /help/webhelp/resource/resource.xml
+
+# Logs
+*.log
+*.log.txt
