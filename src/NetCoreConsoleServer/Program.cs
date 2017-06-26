@@ -1,11 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Threading;
-using System.Threading.Tasks;
-using Opc.Ua;
+﻿using Opc.Ua;
 using Opc.Ua.Configuration;
 using Opc.Ua.Sample;
 using Opc.Ua.Server;
+using System;
+using System.Collections.Generic;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace NetCoreConsoleServer
 {
@@ -53,8 +53,7 @@ namespace NetCoreConsoleServer
         public static void Main(string[] args)
         {
             MySampleServer server = new MySampleServer();
-            server.Start();
-            Console.ReadLine();
+            server.Run();
         }
     }
 
@@ -64,7 +63,7 @@ namespace NetCoreConsoleServer
         Task status;
         DateTime lastEventTime;
 
-        public void Start()
+        public void Run()
         {
 
             try
@@ -92,10 +91,14 @@ namespace NetCoreConsoleServer
             {
                 Console.WriteLine("Server stopped. Waiting for exit...");
 
-                server.Dispose();
-                server = null;
-
-                status.Wait();
+                using (SampleServer _server = server)
+                {
+                    // Stop status thread
+                    server = null;
+                    status.Wait();
+                    // Stop server and dispose
+                    _server.Stop();
+                }
             }
         }
         private static void CertificateValidator_CertificateValidation(CertificateValidator validator, CertificateValidationEventArgs e)
