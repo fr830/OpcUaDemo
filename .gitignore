@@ -264,5 +264,7 @@ __pycache__/
 /help/webhelp/resource/resource.xml
 
 # Logs
+[Ll]ogs/
+[Ll]og/
 *.log
 *.log.txt
