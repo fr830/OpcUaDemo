@@ -50,23 +50,23 @@ namespace NetCoreConsoleClient
                     ApplicationCertificate = new CertificateIdentifier
                     {
                         StoreType = "Directory",
-                        StorePath = "../OPC Foundation/CertificateStores/UA_MachineDefault",
+                        StorePath = "CA/CertificateStores/UA_MachineDefault",
                         SubjectName = "UA Core Sample Client"
                     },
                     TrustedPeerCertificates = new CertificateTrustList
                     {
                         StoreType = "Directory",
-                        StorePath = "../OPC Foundation/CertificateStores/UA Applications",
+                        StorePath = "CA/CertificateStores/UA Applications",
                     },
                     TrustedIssuerCertificates = new CertificateTrustList
                     {
                         StoreType = "Directory",
-                        StorePath = "../OPC Foundation/CertificateStores/UA Certificate Authorities",
+                        StorePath = "CA/CertificateStores/UA Certificate Authorities",
                     },
                     RejectedCertificateStore = new CertificateTrustList
                     {
                         StoreType = "Directory",
-                        StorePath = "../OPC Foundation/CertificateStores/RejectedCertificates",
+                        StorePath = "CA/CertificateStores/RejectedCertificates",
                     },
                     NonceLength = 32,
                     AutoAcceptUntrustedCertificates = true

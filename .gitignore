@@ -268,3 +268,7 @@ __pycache__/
 [Ll]og/
 *.log
 *.log.txt
+
+# CA
+*.der
+*.pfx
