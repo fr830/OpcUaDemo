@@ -6,12 +6,34 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="..\Aggregation Server\AggregatedTypeCache.cs" Link="AggregationServer\AggregatedTypeCache.cs" />
+    <Compile Include="..\Aggregation Server\AggregationNodeManager.cs" Link="AggregationServer\AggregationNodeManager.cs" />
+    <Compile Include="..\Aggregation Server\AggregationServer.cs" Link="AggregationServer\AggregationServer.cs" />
+    <Compile Include="..\Aggregation Server\AggregationServerConfiguration.cs" Link="AggregationServer\AggregationServerConfiguration.cs" />
+    <Compile Include="..\Aggregation Server\Browser.cs" Link="AggregationServer\Browser.cs" />
+    <Compile Include="..\Aggregation Server\Model\AggregationModel.Classes.cs" Link="AggregationServer\Model\AggregationModel.Classes.cs" />
+    <Compile Include="..\Aggregation Server\Model\AggregationModel.Constants.cs" Link="AggregationServer\Model\AggregationModel.Constants.cs" />
+    <Compile Include="..\Aggregation Server\Model\AggregationModel.DataTypes.cs" Link="AggregationServer\Model\AggregationModel.DataTypes.cs" />
+    <Compile Include="..\Aggregation Server\NamespaceMapper.cs" Link="AggregationServer\NamespaceMapper.cs" />
+    <Compile Include="..\Aggregation Server\Namespaces.cs" Link="AggregationServer\Namespaces.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="OPCFoundation.NetStandard.Opc.Ua.Core" Version="0.2.4" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Opc.Ua.Client\Opc.Ua.Client.csproj" />
     <ProjectReference Include="..\Opc.Ua.Configuration\Opc.Ua.Configuration.csproj" />
     <ProjectReference Include="..\Opc.Ua.Server\Opc.Ua.Server.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="AggregationServer\Model\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="..\Aggregation Server\Model\AggregationModel.PredefinedNodes.uanodes" Link="AggregationServer\Model\AggregationModel.PredefinedNodes.uanodes" />
   </ItemGroup>
 
 </Project>
