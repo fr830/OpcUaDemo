@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\Reference Server\Namespaces.cs" Link="ReferenceServer\Namespaces.cs" />
+    <Compile Include="..\Reference Server\ReferenceNodeManager.cs" Link="ReferenceServer\ReferenceNodeManager.cs" />
+    <Compile Include="..\Reference Server\ReferenceServer.cs" Link="ReferenceServer\ReferenceServer.cs" />
+    <Compile Include="..\Reference Server\ReferenceServerConfiguration.cs" Link="ReferenceServer\ReferenceServerConfiguration.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="OPCFoundation.NetStandard.Opc.Ua.Core" Version="0.2.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Opc.Ua.Configuration\Opc.Ua.Configuration.csproj" />
+    <ProjectReference Include="..\Opc.Ua.Server\Opc.Ua.Server.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ReferenceServer\" />
+  </ItemGroup>
+
+</Project>
