@@ -5,19 +5,27 @@ VisualStudioVersion = 15.0.26430.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpcUa.WinFormClient", "src\OpcUa.WinFormClient\OpcUa.WinFormClient.csproj", "{A8EB3B7D-1A92-4BB5-918B-78B370015B6F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCoreConsoleServer", "src\NetCoreConsoleServer\NetCoreConsoleServer.csproj", "{D7BE000E-0D90-4A82-BA8C-0700990F1C7F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCoreConsoleServer", "src\NetCoreConsoleServer\NetCoreConsoleServer.csproj", "{D7BE000E-0D90-4A82-BA8C-0700990F1C7F}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCoreConsoleClient", "src\NetCoreConsoleClient\NetCoreConsoleClient.csproj", "{ED9C7E73-0582-4974-8E85-09D595D1101C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Opc.Ua.Client", "src\Opc.Ua.Client\Opc.Ua.Client.csproj", "{01A5F6AA-D6AE-493B-A687-9B5417F7F1D4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Opc.Ua.Client", "src\Opc.Ua.Client\Opc.Ua.Client.csproj", "{01A5F6AA-D6AE-493B-A687-9B5417F7F1D4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Opc.Ua.Server", "src\Opc.Ua.Server\Opc.Ua.Server.csproj", "{320E8728-EA86-4B4A-B5BB-92175B30748A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Opc.Ua.Server", "src\Opc.Ua.Server\Opc.Ua.Server.csproj", "{320E8728-EA86-4B4A-B5BB-92175B30748A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Opc.Ua.Configuration", "src\Opc.Ua.Configuration\Opc.Ua.Configuration.csproj", "{134D20E9-D04B-4C37-BB87-05E5FB011CE9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Opc.Ua.Configuration", "src\Opc.Ua.Configuration\Opc.Ua.Configuration.csproj", "{134D20E9-D04B-4C37-BB87-05E5FB011CE9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Opc.Ua.Sample", "src\Opc.Ua.Sample\Opc.Ua.Sample.csproj", "{C917A9A3-5DE3-40D1-9491-2E1D326C3A14}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Opc.Ua.Sample", "src\Opc.Ua.Sample\Opc.Ua.Sample.csproj", "{C917A9A3-5DE3-40D1-9491-2E1D326C3A14}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpcUaServerDemo1", "OpcUaServerDemo1\OpcUaServerDemo1.csproj", "{D79423F4-28E9-4107-A657-6DC47518CA41}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpcUaServerDemo1", "OpcUaServerDemo1\OpcUaServerDemo1.csproj", "{D79423F4-28E9-4107-A657-6DC47518CA41}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Aggregation", "Aggregation", "{3D8EB36B-2EF5-4BF2-B4BE-3A03AE5D6F49}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UA Server Controls", "src\UA Server Controls\UA Server Controls.csproj", "{10016CEB-D9DD-4EE1-AF69-889936B77A5F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UA Sample Controls", "src\UA Sample Controls\UA Sample Controls.csproj", "{92AE819B-4938-4502-AC32-67063F9893CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UA Client Controls", "src\UA Client Controls\UA Client Controls.csproj", "{A247D2EE-14FC-463D-A9BA-6CFF1EF22B7A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,8 +65,25 @@ Global
 		{D79423F4-28E9-4107-A657-6DC47518CA41}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D79423F4-28E9-4107-A657-6DC47518CA41}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D79423F4-28E9-4107-A657-6DC47518CA41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10016CEB-D9DD-4EE1-AF69-889936B77A5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10016CEB-D9DD-4EE1-AF69-889936B77A5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10016CEB-D9DD-4EE1-AF69-889936B77A5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10016CEB-D9DD-4EE1-AF69-889936B77A5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92AE819B-4938-4502-AC32-67063F9893CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92AE819B-4938-4502-AC32-67063F9893CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92AE819B-4938-4502-AC32-67063F9893CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92AE819B-4938-4502-AC32-67063F9893CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A247D2EE-14FC-463D-A9BA-6CFF1EF22B7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A247D2EE-14FC-463D-A9BA-6CFF1EF22B7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A247D2EE-14FC-463D-A9BA-6CFF1EF22B7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A247D2EE-14FC-463D-A9BA-6CFF1EF22B7A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{10016CEB-D9DD-4EE1-AF69-889936B77A5F} = {3D8EB36B-2EF5-4BF2-B4BE-3A03AE5D6F49}
+		{92AE819B-4938-4502-AC32-67063F9893CD} = {3D8EB36B-2EF5-4BF2-B4BE-3A03AE5D6F49}
+		{A247D2EE-14FC-463D-A9BA-6CFF1EF22B7A} = {3D8EB36B-2EF5-4BF2-B4BE-3A03AE5D6F49}
 	EndGlobalSection
 EndGlobal

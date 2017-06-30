@@ -22,4 +22,8 @@
     <PackageReference Include="OPCFoundation.NetStandard.Opc.Ua.Core" Version="0.2.4" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Update="NETStandard.Library" Version="1.6.1" />
+  </ItemGroup>
+
 </Project>
